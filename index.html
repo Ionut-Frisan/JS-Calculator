@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="display">
+            <div id="operands">
+                <p id="first-operand"></p>
+                <p id="operation"></p>
+                <p id="second-operand"></p>
+            </div>  
+            <div id="res">
+                <p id="result"></p>
+            </div>
+        </div>
+        <div class="add" onclick="getValue('add', 'operation')" > + </div>
+        <div class="sub" onclick="getValue('subs', 'operation')"> - </div>
+        <div class="divide" onclick="getValue('divide', 'operation')"> / </div>
+        <div class="mul" onclick="getValue('mul', 'operation')"> * </div>
+        <div class="one" onclick="getValue('1', 'number')"> 1 </div>
+        <div class="two" onclick="getValue('2', 'number')"> 2 </div>
+        <div class="three" onclick="getValue('3', 'number')"> 3 </div>
+        <div class="four" onclick="getValue('4', 'number')"> 4 </div>
+        <div class="five" onclick="getValue('5', 'number')"> 5 </div>
+        <div class="six" onclick="getValue('6', 'number')"> 6 </div>
+        <div class="seven" onclick="getValue('7', 'number')"> 7 </div>
+        <div class="eight" onclick="getValue('8', 'number')"> 8 </div>
+        <div class="nine" onclick="getValue('9', 'number')"> 9 </div>
+        <div class="zero" onclick="getValue('0', 'number')"> 0 </div>
+        <div class="dot" onclick="getValue('.', 'dot')"> . </div>
+        <div class="clear" onclick="getValue('c', 'clear')"> c </div>
+        <div class="eq" onclick="calculate()"> = </div>
+        </div>
+</body>
+</html>

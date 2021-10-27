@@ -1,0 +1,108 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid rgba(173, 172, 172, 0.85);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px rgb(228, 231, 235);
+    }
+    
+.parent div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(228, 231, 235);
+    width: auto;
+    height: 60px;
+    border: 1px solid rgba(173, 172, 172, 0.85);
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+.parent div:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+.parent div:nth-child(18):hover{
+    background-color: royalblue;
+}
+
+.parent :nth-child(-n+5){
+    background-color: rgb(187, 188, 189);
+}
+
+.parent :nth-child(-n+5):hover{
+    background-color: rgb(165, 165, 165);
+}
+
+.parent :first-child{
+    background-color: white;
+}
+
+.parent :first-child:hover{
+    background-color: white;
+}
+
+.parent :nth-child(18){
+    height: 100%;
+    background-color: rgb(70, 118, 250);
+}
+
+.display { grid-area: 1 / 1 / 2 / 5; }
+.add { grid-area: 2 / 1 / 3 / 2; }
+.subs { grid-area: 2 / 2 / 3 / 3; }
+.divide { grid-area: 2 / 3 / 3 / 4; }
+.mul { grid-area: 2 / 4 / 3 / 5; }
+.one { grid-area: 3 / 1 / 4 / 2; }
+.two { grid-area: 3 / 2 / 4 / 3; }
+.three { grid-area: 3 / 3 / 4 / 4; }
+.four { grid-area: 4 / 1 / 5 / 2; }
+.five { grid-area: 4 / 2 / 5 / 3; }
+.six { grid-area: 4 / 3 / 5 / 4; }
+.seven { grid-area: 5 / 1 / 6 / 2; }
+.eight { grid-area: 5 / 2 / 6 / 3; }
+.nine { grid-area: 5 / 3 / 6 / 4; }
+.zero { grid-area: 6 / 1 / 7 / 2; }
+.dot { grid-area: 6 / 2 / 7 / 3; }
+.clear { grid-area: 6 / 3 / 7 / 4; }
+.eq { grid-area: 3 / 4 / 7 / 5; }
+
+.display div, div > p{
+    border:none;
+    background-color: white;
+}
+
+.res{
+    background-color: white;
+}
+
+.display{
+    grid-column: 1 / -1;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    float: right;
+    flex-direction: column;
+}
+
+
+#first-operand, #second-operand, #result, #operation, #res {
+    height: 50%;
+    background-color:white;
+}
+
+#operands{
+    transform: translate(5px);
+}
+
+#res{
+    transform: translatey(-15px);
+}
